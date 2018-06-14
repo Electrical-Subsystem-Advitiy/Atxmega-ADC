@@ -89,5 +89,8 @@ o External Reference on PORT B - ADC_REFSEL_AREFB_gc
 * 1111 1101 at 1.990 Volts
 * 1111 1110 at 1.998 Volts
 * 1111 1111 at 2.01 Volts (Precision loss due to change in multimeter readings at 2 Volts.)
-(This is for PtX-128 at Satellite Lab, IIT Bombay)
+
+- (This is for PtX-128 at Satellite Lab, IIT Bombay)
+
+- By Neilabh
 

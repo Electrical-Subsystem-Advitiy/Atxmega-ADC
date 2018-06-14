@@ -1,0 +1,644 @@
+
+ADC FROM AVR1505.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000003e4  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00802000  00802000  00000458  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000002  00802000  00802000  00000458  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000458  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000488  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000088  00000000  00000000  000004c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00004401  00000000  00000000  00000550  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000034b0  00000000  00000000  00004951  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000086d  00000000  00000000  00007e01  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000100  00000000  00000000  00008670  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000033d4  00000000  00000000  00008770  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000059d  00000000  00000000  0000bb44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000c0  00000000  00000000  0000c0e1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 fe 00 	jmp	0x1fc	; 0x1fc <__ctors_end>
+   4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+   8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+   c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  10:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  14:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  18:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  1c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  20:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  24:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  28:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  2c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  30:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  34:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  38:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  3c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  40:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  44:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  48:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  4c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  50:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  54:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  58:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  5c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  60:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  64:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  68:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  6c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  70:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  74:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  78:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  7c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  80:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  84:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  88:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  8c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  90:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  94:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  98:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  9c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  a0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  a4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  a8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  ac:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  b0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  b4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  b8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  bc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  c0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  c4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  c8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  cc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  d0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  d4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  d8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  dc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  e0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  e4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  e8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  ec:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  f0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  f4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  f8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  fc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 100:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 104:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 108:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 10c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 110:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 114:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 118:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 11c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 120:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 124:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 128:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 12c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 130:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 134:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 138:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 13c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 140:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 144:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 148:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 14c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 150:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 154:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 158:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 15c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 160:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 164:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 168:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 16c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 170:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 174:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 178:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 17c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 180:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 184:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 188:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 18c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 190:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 194:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 198:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 19c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1a0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1a4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1a8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1ac:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1b0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1b4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1b8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1bc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1c0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1c4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1c8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1cc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1d0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1d4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1d8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1dc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1e0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1e4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1e8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1ec:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1f0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1f4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1f8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+
+000001fc <__ctors_end>:
+ 1fc:	11 24       	eor	r1, r1
+ 1fe:	1f be       	out	0x3f, r1	; 63
+ 200:	cf ef       	ldi	r28, 0xFF	; 255
+ 202:	cd bf       	out	0x3d, r28	; 61
+ 204:	df e3       	ldi	r29, 0x3F	; 63
+ 206:	de bf       	out	0x3e, r29	; 62
+ 208:	00 e0       	ldi	r16, 0x00	; 0
+ 20a:	0c bf       	out	0x3c, r16	; 60
+
+0000020c <__do_clear_bss>:
+ 20c:	20 e2       	ldi	r18, 0x20	; 32
+ 20e:	a0 e0       	ldi	r26, 0x00	; 0
+ 210:	b0 e2       	ldi	r27, 0x20	; 32
+ 212:	01 c0       	rjmp	.+2      	; 0x216 <.do_clear_bss_start>
+
+00000214 <.do_clear_bss_loop>:
+ 214:	1d 92       	st	X+, r1
+
+00000216 <.do_clear_bss_start>:
+ 216:	a2 30       	cpi	r26, 0x02	; 2
+ 218:	b2 07       	cpc	r27, r18
+ 21a:	e1 f7       	brne	.-8      	; 0x214 <.do_clear_bss_loop>
+ 21c:	0e 94 87 01 	call	0x30e	; 0x30e <main>
+ 220:	0c 94 f0 01 	jmp	0x3e0	; 0x3e0 <_exit>
+
+00000224 <__bad_interrupt>:
+ 224:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000228 <_Z13ADC_Wait_8MHzP10ADC_struct>:
+		} while (!ADC_Ch_Conversion_Complete(ch));
+		offset = (uint8_t)ADC_ResultCh_GetWord(ch);
+
+		return offset;
+	}
+}
+ 228:	fc 01       	movw	r30, r24
+ 22a:	84 81       	ldd	r24, Z+4	; 0x04
+ 22c:	14 82       	std	Z+4, r1	; 0x04
+ 22e:	9a e2       	ldi	r25, 0x2A	; 42
+ 230:	9a 95       	dec	r25
+ 232:	f1 f7       	brne	.-4      	; 0x230 <_Z13ADC_Wait_8MHzP10ADC_struct+0x8>
+ 234:	00 c0       	rjmp	.+0      	; 0x236 <_Z13ADC_Wait_8MHzP10ADC_struct+0xe>
+ 236:	84 83       	std	Z+4, r24	; 0x04
+ 238:	08 95       	ret
+
+0000023a <_Z21ADC_Offset_Get_SignedP10ADC_structP13ADC_CH_structb>:
+ *  \param oversampling false for one measurement. true for averaging several measurements.
+ *
+ *  \return Offset on the selected ADC
+ */
+int8_t ADC_Offset_Get_Signed(ADC_t * adc, ADC_CH_t *ch, bool oversampling)
+{
+ 23a:	fb 01       	movw	r30, r22
+	if (oversampling) {
+ 23c:	44 23       	and	r20, r20
+ 23e:	e1 f0       	breq	.+56     	; 0x278 <_Z21ADC_Offset_Get_SignedP10ADC_structP13ADC_CH_structb+0x3e>
+ 240:	24 e0       	ldi	r18, 0x04	; 4
+ 242:	30 e0       	ldi	r19, 0x00	; 0
+ 244:	40 e0       	ldi	r20, 0x00	; 0
+ 246:	50 e0       	ldi	r21, 0x00	; 0
+int16_t ADC_ResultCh_GetWord_Signed(ADC_CH_t * adc_ch, int8_t signedOffset)
+{
+	int16_t answer;
+
+	/* Clear interrupt flag.*/
+	adc_ch->INTFLAGS = ADC_CH_CHIF_bm;
+ 248:	61 e0       	ldi	r22, 0x01	; 1
+{
+	if (oversampling) {
+		int16_t offset=0;
+		for (int i=0; i<4; i++) {
+			/* Do one conversion to find offset. */
+			ADC_Ch_Conversion_Start(ch);
+ 24a:	80 81       	ld	r24, Z
+ 24c:	80 68       	ori	r24, 0x80	; 128
+ 24e:	80 83       	st	Z, r24
+
+			do{
+			} while (!ADC_Ch_Conversion_Complete(ch));
+ 250:	83 81       	ldd	r24, Z+3	; 0x03
+		int16_t offset=0;
+		for (int i=0; i<4; i++) {
+			/* Do one conversion to find offset. */
+			ADC_Ch_Conversion_Start(ch);
+
+			do{
+ 252:	80 ff       	sbrs	r24, 0
+ 254:	fd cf       	rjmp	.-6      	; 0x250 <_Z21ADC_Offset_Get_SignedP10ADC_structP13ADC_CH_structb+0x16>
+int16_t ADC_ResultCh_GetWord_Signed(ADC_CH_t * adc_ch, int8_t signedOffset)
+{
+	int16_t answer;
+
+	/* Clear interrupt flag.*/
+	adc_ch->INTFLAGS = ADC_CH_CHIF_bm;
+ 256:	63 83       	std	Z+3, r22	; 0x03
+
+	/* Return result register contents*/
+	answer = adc_ch->RES - signedOffset;
+ 258:	84 81       	ldd	r24, Z+4	; 0x04
+ 25a:	95 81       	ldd	r25, Z+5	; 0x05
+			/* Do one conversion to find offset. */
+			ADC_Ch_Conversion_Start(ch);
+
+			do{
+			} while (!ADC_Ch_Conversion_Complete(ch));
+			offset += ADC_ResultCh_GetWord_Signed(ch, 0x00);
+ 25c:	48 0f       	add	r20, r24
+ 25e:	59 1f       	adc	r21, r25
+ 260:	21 50       	subi	r18, 0x01	; 1
+ 262:	31 09       	sbc	r19, r1
+ */
+int8_t ADC_Offset_Get_Signed(ADC_t * adc, ADC_CH_t *ch, bool oversampling)
+{
+	if (oversampling) {
+		int16_t offset=0;
+		for (int i=0; i<4; i++) {
+ 264:	91 f7       	brne	.-28     	; 0x24a <_Z21ADC_Offset_Get_SignedP10ADC_structP13ADC_CH_structb+0x10>
+
+			do{
+			} while (!ADC_Ch_Conversion_Complete(ch));
+			offset += ADC_ResultCh_GetWord_Signed(ch, 0x00);
+		}
+		return ((int8_t)(offset/4));
+ 266:	ca 01       	movw	r24, r20
+ 268:	99 23       	and	r25, r25
+ 26a:	0c f4       	brge	.+2      	; 0x26e <_Z21ADC_Offset_Get_SignedP10ADC_structP13ADC_CH_structb+0x34>
+ 26c:	03 96       	adiw	r24, 0x03	; 3
+ 26e:	95 95       	asr	r25
+ 270:	87 95       	ror	r24
+ 272:	95 95       	asr	r25
+ 274:	87 95       	ror	r24
+ 276:	08 95       	ret
+	} else {
+		int8_t offset=0;
+
+		/* Do one conversion to find offset. */
+		ADC_Ch_Conversion_Start(ch);
+ 278:	80 81       	ld	r24, Z
+ 27a:	80 68       	ori	r24, 0x80	; 128
+ 27c:	80 83       	st	Z, r24
+
+		do{
+		} while (!ADC_Ch_Conversion_Complete(ch));
+ 27e:	83 81       	ldd	r24, Z+3	; 0x03
+		int8_t offset=0;
+
+		/* Do one conversion to find offset. */
+		ADC_Ch_Conversion_Start(ch);
+
+		do{
+ 280:	80 ff       	sbrs	r24, 0
+ 282:	fd cf       	rjmp	.-6      	; 0x27e <_Z21ADC_Offset_Get_SignedP10ADC_structP13ADC_CH_structb+0x44>
+int16_t ADC_ResultCh_GetWord_Signed(ADC_CH_t * adc_ch, int8_t signedOffset)
+{
+	int16_t answer;
+
+	/* Clear interrupt flag.*/
+	adc_ch->INTFLAGS = ADC_CH_CHIF_bm;
+ 284:	81 e0       	ldi	r24, 0x01	; 1
+ 286:	83 83       	std	Z+3, r24	; 0x03
+
+	/* Return result register contents*/
+	answer = adc_ch->RES - signedOffset;
+ 288:	84 81       	ldd	r24, Z+4	; 0x04
+ 28a:	95 81       	ldd	r25, Z+5	; 0x05
+		} while (!ADC_Ch_Conversion_Complete(ch));
+		offset = (uint8_t)ADC_ResultCh_GetWord_Signed(ch, 0x00);
+
+		return offset;
+	}
+}
+ 28c:	08 95       	ret
+
+0000028e <_Z22SP_ReadCalibrationByteh>:
+uint8_t SP_ReadCalibrationByte( uint8_t index )
+{
+	uint8_t result;
+
+	/* Load the NVM Command register to read the calibration row. */
+	NVM_CMD = NVM_CMD_READ_CALIB_ROW_gc;
+ 28e:	aa ec       	ldi	r26, 0xCA	; 202
+ 290:	b1 e0       	ldi	r27, 0x01	; 1
+ 292:	92 e0       	ldi	r25, 0x02	; 2
+ 294:	9c 93       	st	X, r25
+	result = pgm_read_byte(index);
+ 296:	e8 2f       	mov	r30, r24
+ 298:	f0 e0       	ldi	r31, 0x00	; 0
+ 29a:	84 91       	lpm	r24, Z
+
+	/* Clean up NVM Command register. */
+	NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+ 29c:	1c 92       	st	X, r1
+
+	return result;
+}
+ 29e:	08 95       	ret
+
+000002a0 <_Z26ADC_CalibrationValues_LoadP10ADC_struct>:
+ *  register. The calibration data reduces the non-linearity error in the adc.
+ *
+ *  \param  adc          Pointer to ADC module register section.
+ */
+void ADC_CalibrationValues_Load(ADC_t * adc)
+{
+ 2a0:	cf 93       	push	r28
+ 2a2:	df 93       	push	r29
+ 2a4:	ec 01       	movw	r28, r24
+	if (&ADCA == adc) {
+ 2a6:	c1 15       	cp	r28, r1
+ 2a8:	82 e0       	ldi	r24, 0x02	; 2
+ 2aa:	d8 07       	cpc	r29, r24
+ 2ac:	59 f4       	brne	.+22     	; 0x2c4 <_Z26ADC_CalibrationValues_LoadP10ADC_struct+0x24>
+		/* Get ADCACAL0 from production signature . */
+		adc->CALL = SP_ReadCalibrationByte( PROD_SIGNATURES_START + ADCACAL0_offset );
+ 2ae:	80 e2       	ldi	r24, 0x20	; 32
+ 2b0:	0e 94 47 01 	call	0x28e	; 0x28e <_Z22SP_ReadCalibrationByteh>
+ 2b4:	c0 e0       	ldi	r28, 0x00	; 0
+ 2b6:	d2 e0       	ldi	r29, 0x02	; 2
+ 2b8:	8c 87       	std	Y+12, r24	; 0x0c
+		adc->CALH = SP_ReadCalibrationByte( PROD_SIGNATURES_START + ADCACAL1_offset );
+ 2ba:	81 e2       	ldi	r24, 0x21	; 33
+ 2bc:	0e 94 47 01 	call	0x28e	; 0x28e <_Z22SP_ReadCalibrationByteh>
+ 2c0:	8d 87       	std	Y+13, r24	; 0x0d
+ 2c2:	08 c0       	rjmp	.+16     	; 0x2d4 <_Z26ADC_CalibrationValues_LoadP10ADC_struct+0x34>
+	} else {
+		/* Get ADCBCAL0 from production signature  */
+		adc->CALL = SP_ReadCalibrationByte( PROD_SIGNATURES_START + ADCBCAL0_offset );
+ 2c4:	84 e2       	ldi	r24, 0x24	; 36
+ 2c6:	0e 94 47 01 	call	0x28e	; 0x28e <_Z22SP_ReadCalibrationByteh>
+ 2ca:	8c 87       	std	Y+12, r24	; 0x0c
+		adc->CALH = SP_ReadCalibrationByte( PROD_SIGNATURES_START + ADCBCAL1_offset );
+ 2cc:	85 e2       	ldi	r24, 0x25	; 37
+ 2ce:	0e 94 47 01 	call	0x28e	; 0x28e <_Z22SP_ReadCalibrationByteh>
+ 2d2:	8d 87       	std	Y+13, r24	; 0x0d
+	}
+}
+ 2d4:	df 91       	pop	r29
+ 2d6:	cf 91       	pop	r28
+ 2d8:	08 95       	ret
+
+000002da <_Z10USARTXInitv>:
+
+volatile uint16_t ADC_result;
+
+void USARTXInit(void)
+{
+	PORTC_DIRSET=PIN3_bm;                                           //Setting TX pin of USARTC0 as output (PC3)
+ 2da:	88 e0       	ldi	r24, 0x08	; 8
+ 2dc:	80 93 41 06 	sts	0x0641, r24	; 0x800641 <__TEXT_REGION_LENGTH__+0x700641>
+	PORTC_DIRCLR=PIN2_bm;                                           //Setting RX pin of USARTC0 as input (PC2)
+ 2e0:	84 e0       	ldi	r24, 0x04	; 4
+ 2e2:	80 93 42 06 	sts	0x0642, r24	; 0x800642 <__TEXT_REGION_LENGTH__+0x700642>
+	USARTC0_BAUDCTRLA=0x0C;                                         //BSEL should be 12 in decimal for selection of baud rate 9600 with given freq
+ 2e6:	8c e0       	ldi	r24, 0x0C	; 12
+ 2e8:	80 93 a6 08 	sts	0x08A6, r24	; 0x8008a6 <__TEXT_REGION_LENGTH__+0x7008a6>
+	USARTC0_BAUDCTRLB=0;                                            //BSCALE = 0
+ 2ec:	10 92 a7 08 	sts	0x08A7, r1	; 0x8008a7 <__TEXT_REGION_LENGTH__+0x7008a7>
+	USARTC0_CTRLC=(USART_CHSIZE_8BIT_gc)|(USART_PMODE_DISABLED_gc); //8 bit transmission in one data frame, no parity and one stop bit
+ 2f0:	83 e0       	ldi	r24, 0x03	; 3
+ 2f2:	80 93 a5 08 	sts	0x08A5, r24	; 0x8008a5 <__TEXT_REGION_LENGTH__+0x7008a5>
+	USARTC0_CTRLB=(USART_RXEN_bm)|(USART_TXEN_bm);                  //Enabling the transmitter and receiver channels of USARTC0
+ 2f6:	88 e1       	ldi	r24, 0x18	; 24
+ 2f8:	80 93 a4 08 	sts	0x08A4, r24	; 0x8008a4 <__TEXT_REGION_LENGTH__+0x7008a4>
+ 2fc:	08 95       	ret
+
+000002fe <_Z11USARTXTransh>:
+}
+
+void USARTXTrans(uint8_t dat)
+{
+	while(!(USARTC0_STATUS & USART_DREIF_bm));                      //While data register empty interrupt flag is not high, wait
+ 2fe:	e1 ea       	ldi	r30, 0xA1	; 161
+ 300:	f8 e0       	ldi	r31, 0x08	; 8
+ 302:	90 81       	ld	r25, Z
+ 304:	95 ff       	sbrs	r25, 5
+ 306:	fd cf       	rjmp	.-6      	; 0x302 <_Z11USARTXTransh+0x4>
+	USARTC0_DATA=dat;                                               //Writing the desired value into the transmit buffer register
+ 308:	80 93 a0 08 	sts	0x08A0, r24	; 0x8008a0 <__TEXT_REGION_LENGTH__+0x7008a0>
+ 30c:	08 95       	ret
+
+0000030e <main>:
+int main( void )
+{
+	// Variable for use when we read the result from an ADC channel
+	int8_t offset;
+
+	LEDPORT.DIR = 0xFF; //Set as ouput, the 8 MSB of the result is output here
+ 30e:	e0 ea       	ldi	r30, 0xA0	; 160
+ 310:	f6 e0       	ldi	r31, 0x06	; 6
+ 312:	8f ef       	ldi	r24, 0xFF	; 255
+ 314:	80 83       	st	Z, r24
+	LEDPORT.OUT = 0x00; //Default off for LED
+ 316:	14 82       	std	Z+4, r1	; 0x04
+
+	//PORTQ.PIN2CTRL = (PORTQ.PIN2CTRL & ~PORT_OPC_gm) | PORT_OPC_PULLDOWN_gc;	// This pin must be grounded to "enable" NTC-resistor
+
+	/* Move stored calibration values to ADC B */
+	ADC_CalibrationValues_Load(&ADCB);
+ 318:	80 e4       	ldi	r24, 0x40	; 64
+ 31a:	92 e0       	ldi	r25, 0x02	; 2
+ 31c:	0e 94 50 01 	call	0x2a0	; 0x2a0 <_Z26ADC_CalibrationValues_LoadP10ADC_struct>
+
+	/* Set up ADC B to have signed conversion mode and 12 bit resolution. */
+	ADC_ConvMode_and_Resolution_Config(&ADCB, true, ADC_RESOLUTION_12BIT_gc);
+ 320:	e0 e4       	ldi	r30, 0x40	; 64
+ 322:	f2 e0       	ldi	r31, 0x02	; 2
+ 324:	81 81       	ldd	r24, Z+1	; 0x01
+ 326:	89 7e       	andi	r24, 0xE9	; 233
+ 328:	80 61       	ori	r24, 0x10	; 16
+ 32a:	81 83       	std	Z+1, r24	; 0x01
+
+	// The ADC has different voltage reference options, controlled by the REFSEL bits in the
+	// REFCTRL register. Here the internal reference is selected
+	ADC_Reference_Config(&ADCB, ADC_REFSEL_INTVCC_gc);
+ 32c:	82 81       	ldd	r24, Z+2	; 0x02
+ 32e:	8f 78       	andi	r24, 0x8F	; 143
+ 330:	80 61       	ori	r24, 0x10	; 16
+ 332:	82 83       	std	Z+2, r24	; 0x02
+
+	// The clock into the ADC decide the maximum sample rate and the conversion time, and
+	// this is controlled by the PRESCALER bits in the PRESCALER register. Here, the
+	// Peripheral Clock is divided by 8 ( gives 250 KSPS with 2Mhz clock )
+	ADC_Prescaler_Config(&ADCB, ADC_PRESCALER_DIV8_gc);
+ 334:	84 81       	ldd	r24, Z+4	; 0x04
+ 336:	88 7f       	andi	r24, 0xF8	; 248
+ 338:	81 60       	ori	r24, 0x01	; 1
+ 33a:	84 83       	std	Z+4, r24	; 0x04
+	// The used Virtual Channel (CH0) must be set in the correct mode
+	// In this task we will use single ended input, so this mode is selected
+
+	/* Setup channel 0 to have single ended input. */
+	
+	ADC_Ch_InputMode_and_Gain_Config(&ADCB.CH0,	ADC_CH_INPUTMODE_SINGLEENDED_gc, ADC_CH_GAIN_1X_gc); 
+ 33c:	a0 e6       	ldi	r26, 0x60	; 96
+ 33e:	b2 e0       	ldi	r27, 0x02	; 2
+ 340:	8c 91       	ld	r24, X
+ 342:	8c 7f       	andi	r24, 0xFC	; 252
+ 344:	81 60       	ori	r24, 0x01	; 1
+ 346:	8c 93       	st	X, r24
+	// When changing gain, if required, when using differential, change here, as well as in adc_driver.h, labeled as "In case of changing gain, change the gain value here.".
+
+
+	// Setting up the which pins to convert.
+	// Note that the negative pin is internally connected to ground
+	ADC_Ch_InputMux_Config(&ADCB.CH0, ADC_CH_MUXPOS_PIN1_gc, ADC_CH_MUXNEG_PIN0_gc);
+ 348:	88 e0       	ldi	r24, 0x08	; 8
+ 34a:	11 96       	adiw	r26, 0x01	; 1
+ 34c:	8c 93       	st	X, r24
+
+
+	// Before the ADC can be used it must be enabled
+	ADC_Enable(&ADCB);
+ 34e:	80 81       	ld	r24, Z
+ 350:	81 60       	ori	r24, 0x01	; 1
+ 352:	80 83       	st	Z, r24
+
+
+	// Wait until the ADC is ready
+	ADC_Wait_8MHz(&ADCB);
+ 354:	80 e4       	ldi	r24, 0x40	; 64
+ 356:	92 e0       	ldi	r25, 0x02	; 2
+ 358:	0e 94 14 01 	call	0x228	; 0x228 <_Z13ADC_Wait_8MHzP10ADC_struct>
+
+	// In the while(1) loop, a conversion is started on CH0 and the 8 MSB of the result is
+	// output on the LEDPORT when the conversion is done
+
+	/* Get offset value for ADC B.  */
+	offset = ADC_Offset_Get_Signed(&ADCB, &(ADCB.CH0), true);
+ 35c:	41 e0       	ldi	r20, 0x01	; 1
+ 35e:	60 e6       	ldi	r22, 0x60	; 96
+ 360:	72 e0       	ldi	r23, 0x02	; 2
+ 362:	80 e4       	ldi	r24, 0x40	; 64
+ 364:	92 e0       	ldi	r25, 0x02	; 2
+ 366:	0e 94 1d 01 	call	0x23a	; 0x23a <_Z21ADC_Offset_Get_SignedP10ADC_structP13ADC_CH_structb>
+ 36a:	08 2f       	mov	r16, r24
+	
+	USARTXInit();
+ 36c:	0e 94 6d 01 	call	0x2da	; 0x2da <_Z10USARTXInitv>
+	
+	while (1) {
+		// Start a single conversion
+		ADC_Ch_Conversion_Start(&ADCB.CH0);
+ 370:	c0 e6       	ldi	r28, 0x60	; 96
+ 372:	d2 e0       	ldi	r29, 0x02	; 2
+int16_t ADC_ResultCh_GetWord_Signed(ADC_CH_t * adc_ch, int8_t signedOffset)
+{
+	int16_t answer;
+
+	/* Clear interrupt flag.*/
+	adc_ch->INTFLAGS = ADC_CH_CHIF_bm;
+ 374:	dd 24       	eor	r13, r13
+ 376:	d3 94       	inc	r13
+
+	/* Return result register contents*/
+	answer = adc_ch->RES - signedOffset;
+ 378:	00 2e       	mov	r0, r16
+ 37a:	00 0c       	add	r0, r0
+ 37c:	11 0b       	sbc	r17, r17
+		//ADCB.INTFLAGS = ADC_CH0IF_bm;     // Clear CH0IF by writing a one to it
+		ADC_result =   ADC_ResultCh_GetWord_Signed(&ADCB.CH0, offset);
+		// Max result is 2047, divide by 4 to get a byte value;
+		ADC_result = ((ADC_result - 1) / 8);
+		// invert as the LED is on when pin is low
+		LEDPORT.OUT = ADC_result;
+ 37e:	0f 2e       	mov	r0, r31
+ 380:	f0 ea       	ldi	r31, 0xA0	; 160
+ 382:	ef 2e       	mov	r14, r31
+ 384:	f6 e0       	ldi	r31, 0x06	; 6
+ 386:	ff 2e       	mov	r15, r31
+ 388:	f0 2d       	mov	r31, r0
+	
+	USARTXInit();
+	
+	while (1) {
+		// Start a single conversion
+		ADC_Ch_Conversion_Start(&ADCB.CH0);
+ 38a:	88 81       	ld	r24, Y
+ 38c:	80 68       	ori	r24, 0x80	; 128
+ 38e:	88 83       	st	Y, r24
+
+		while(!ADC_Ch_Conversion_Complete(&ADCB.CH0));
+ 390:	8b 81       	ldd	r24, Y+3	; 0x03
+ 392:	80 ff       	sbrs	r24, 0
+ 394:	fd cf       	rjmp	.-6      	; 0x390 <main+0x82>
+int16_t ADC_ResultCh_GetWord_Signed(ADC_CH_t * adc_ch, int8_t signedOffset)
+{
+	int16_t answer;
+
+	/* Clear interrupt flag.*/
+	adc_ch->INTFLAGS = ADC_CH_CHIF_bm;
+ 396:	db 82       	std	Y+3, r13	; 0x03
+
+	/* Return result register contents*/
+	answer = adc_ch->RES - signedOffset;
+ 398:	8c 81       	ldd	r24, Y+4	; 0x04
+ 39a:	9d 81       	ldd	r25, Y+5	; 0x05
+ 39c:	80 1b       	sub	r24, r16
+ 39e:	91 0b       	sbc	r25, r17
+
+		//ADCB.INTFLAGS = ADC_CH0IF_bm;     // Clear CH0IF by writing a one to it
+		ADC_result =   ADC_ResultCh_GetWord_Signed(&ADCB.CH0, offset);
+ 3a0:	80 93 00 20 	sts	0x2000, r24	; 0x802000 <_edata>
+ 3a4:	90 93 01 20 	sts	0x2001, r25	; 0x802001 <_edata+0x1>
+		// Max result is 2047, divide by 4 to get a byte value;
+		ADC_result = ((ADC_result - 1) / 8);
+ 3a8:	80 91 00 20 	lds	r24, 0x2000	; 0x802000 <_edata>
+ 3ac:	90 91 01 20 	lds	r25, 0x2001	; 0x802001 <_edata+0x1>
+ 3b0:	01 97       	sbiw	r24, 0x01	; 1
+ 3b2:	96 95       	lsr	r25
+ 3b4:	87 95       	ror	r24
+ 3b6:	96 95       	lsr	r25
+ 3b8:	87 95       	ror	r24
+ 3ba:	96 95       	lsr	r25
+ 3bc:	87 95       	ror	r24
+ 3be:	80 93 00 20 	sts	0x2000, r24	; 0x802000 <_edata>
+ 3c2:	90 93 01 20 	sts	0x2001, r25	; 0x802001 <_edata+0x1>
+		// invert as the LED is on when pin is low
+		LEDPORT.OUT = ADC_result;
+ 3c6:	80 91 00 20 	lds	r24, 0x2000	; 0x802000 <_edata>
+ 3ca:	90 91 01 20 	lds	r25, 0x2001	; 0x802001 <_edata+0x1>
+ 3ce:	f7 01       	movw	r30, r14
+ 3d0:	84 83       	std	Z+4, r24	; 0x04
+		
+		USARTXTrans(ADC_result);
+ 3d2:	80 91 00 20 	lds	r24, 0x2000	; 0x802000 <_edata>
+ 3d6:	90 91 01 20 	lds	r25, 0x2001	; 0x802001 <_edata+0x1>
+ 3da:	0e 94 7f 01 	call	0x2fe	; 0x2fe <_Z11USARTXTransh>
+	/* Get offset value for ADC B.  */
+	offset = ADC_Offset_Get_Signed(&ADCB, &(ADCB.CH0), true);
+	
+	USARTXInit();
+	
+	while (1) {
+ 3de:	d5 cf       	rjmp	.-86     	; 0x38a <main+0x7c>
+
+000003e0 <_exit>:
+ 3e0:	f8 94       	cli
+
+000003e2 <__stop_program>:
+ 3e2:	ff cf       	rjmp	.-2      	; 0x3e2 <__stop_program>

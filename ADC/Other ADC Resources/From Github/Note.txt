@@ -1,0 +1,11 @@
+Please note that these applications do not open directly.
+You have to copy the main code into a new application.
+Then you have to either copy the driver codes into the main files or add solutions.
+This can be done by right clicking the solution name in Solution Esplorer on right side of the screen and then clicking on 'Add'.
+This has 2 options - 'New item' and 'Existing item'.
+Copy the code into 'New item' or save the code in a new file and copy the link via 'Existing item'.
+Further, the *.c code has to be copied into correspondng *.h file.
+Further, ADC_REFSEL_VCC_gc has to be changed to ADC_REFSEL_INTVCC_gc.
+And ADC_CH_GAINFAC_t to ADC_CH_GAIN_1X_gc or other multipliers.
+This is because ADC_REFSEL_VCC_gc and ADC_CH_GAINFAC_t no longer exist.
+Then build and enjoy.

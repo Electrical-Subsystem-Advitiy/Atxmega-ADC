@@ -1,6 +1,8 @@
 ## NOTES 
 * This is operating on ATXMEGA128A3U with Voltage 3.3 Volts.
 
+* For more details, refer to https://github.com/Electrical-Subsystem-Advitiy/Atxmega-ADC/blob/master/ADC/ADC%20SELECTION%20GUIDE%20-%20doc8378.pdf
+
 #### Conversion Mode And Resolution:
 * This code converts analogue to 12 bit digital.
 * But only 11 bits of these are actually available.
@@ -20,19 +22,19 @@
 
 #### Max and Min Readings:
 * This code shows max reading, that is 1111 1111 or FF at 2.02 Volts.
-* This code shows min reading, that is 0000 0001 or 01 at 0.0015 Volts.
-o (The Precision Difference is due to values being measured across different modes on multimeter)
+* This code shows min reading, that is 0000 0001 or 01 at 0.0015 Volts. \
+  o (The Precision Difference is due to values being measured across different modes on multimeter)
 
 #### Connections:
 * Negative terminal is connected to Ground.
-* Positive terminal is connected to PORT B PIN 1.
-o This is because we have used single ended ext input.
-o Otherwise, Negative Terminal is connected to PIN0 as default.
-* Instead of this, this can be shifted to PORT A PIN 1.
-o  (And corresponding PORT A PIN 0)
+* Positive terminal is connected to PORT B PIN 1. \
+  o This is because we have used single ended ext input. \
+  o Otherwise, Negative Terminal is connected to PIN0 as default.
+* Instead of this, this can be shifted to PORT A PIN 1. \
+  o  (And corresponding PORT A PIN 0)
 * For this, change ADCB to ADCA in all instances in main.c
-* To change this, change MUXNEG & MUXPOS in ADCx_ChN_MUXCTRL register.
-o x is PORT, A or B; N is Ch number, 0, 1, 2, or 3.
+* To change this, change MUXNEG & MUXPOS in ADCx_ChN_MUXCTRL register. \
+  o x is PORT, A or B; N is Ch number, 0, 1, 2, or 3.
 
 #### Virtual Channels:
 * Channel 0 or Ch0 has been used in this code.
@@ -40,11 +42,11 @@ o x is PORT, A or B; N is Ch number, 0, 1, 2, or 3.
 * For that, change Ch0 in main.c to Ch1, Ch2, OR Ch3 as required.
 
 #### Input Modes:
-* 4 I/P modes available:
-* ** Single Ended External I/P - used here.
-* ** Internal I/P.
-* ** Differential I/P w/o gain.
-* ** Differential I/P with gain
+* 4 I/P modes available: \
+  o Single Ended External I/P - used here. \
+  o Internal I/P. \
+  o Differential I/P w/o gain. \
+  o Differential I/P with gain
 * These can be assigned by assigning ADC_CH_INPUTMODE_<specify input mode>_gc in main.c.
 
 #### USART Connections:
@@ -57,13 +59,13 @@ o x is PORT, A or B; N is Ch number, 0, 1, 2, or 3.
 * ADC clock determines the conversion rate.
 
 #### Reference Voltage:
-* 5 options are available for selecting the reference voltage:
-o Fixed internal voltage of 1V - ADC_REFSEL_INT1V_gc
-o Not recommended as too low to give a good resolution.
-o Internal Voltage Reference of VCC / 1.6 - ADC_REFSEL_INTVCC_gc
-o Internal Voltage Reference of VCC / 2 - ADC_REFSEL_INTVCC2_gc
-o External Reference on PORT A - ADC_REFSEL_AREFA_gc
-o External Reference on PORT B - ADC_REFSEL_AREFB_gc
+* 5 options are available for selecting the reference voltage: \
+  o Fixed internal voltage of 1V - ADC_REFSEL_INT1V_gc \
+  o Not recommended as too low to give a good resolution. \
+  o Internal Voltage Reference of VCC / 1.6 - ADC_REFSEL_INTVCC_gc \
+  o Internal Voltage Reference of VCC / 2 - ADC_REFSEL_INTVCC2_gc \
+  o External Reference on PORT A - ADC_REFSEL_AREFA_gc \
+  o External Reference on PORT B - ADC_REFSEL_AREFB_gc
 
 * Here, ADC_REFSEL_INTVCC_gc has been used, which is 3.3 / 1.6 = 2.09 Volts.
 * This is the maximum range possible without using external reference.
